@@ -1,0 +1,25 @@
+version: "3.4"
+
+services:
+  nextjs_web_cms_thiet_bi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NEXT_ENVIRONMENT=staging
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    ports:
+      - "5500:3000"
+    restart: always
+    networks:
+      - qipf-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "1"
+
+networks:
+  qipf-network:
+    external: true
