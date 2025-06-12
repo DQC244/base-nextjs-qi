@@ -18,8 +18,8 @@ const Logo = ({ ...otherProps }: LogoProps) => {
           priority="true"
           src={ImageConstant.Logo}
           alt="logo"
-          width={194}
-          height={48}
+          width={120}
+          height={120}
           boxProps={{
             margin: "auto",
           }}

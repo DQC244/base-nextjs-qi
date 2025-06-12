@@ -6,16 +6,17 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const token = request.cookies.get(AppConstant.ACCESS_TOKEN)?.value;
 
-  if (pathname === PathConstant.LOGIN) {
-    if (token) {
-      return NextResponse.redirect(new URL(PathConstant.ROOT, request.url));
-    }
+  // logic check token
+  // if (pathname === PathConstant.LOGIN) {
+  //   if (token) {
+  //     return NextResponse.redirect(new URL(PathConstant.ROOT, request.url));
+  //   }
 
-    return NextResponse.next();
-  }
-  if (!token) {
-    return NextResponse.redirect(new URL(PathConstant.LOGIN, request.url));
-  }
+  //   return NextResponse.next();
+  // }
+  // if (!token) {
+  //   return NextResponse.redirect(new URL(PathConstant.LOGIN, request.url));
+  // }
 
   return NextResponse.next();
 }

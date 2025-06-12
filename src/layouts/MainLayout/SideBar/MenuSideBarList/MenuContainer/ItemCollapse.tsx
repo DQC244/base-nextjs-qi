@@ -25,14 +25,14 @@ const ItemCollapse = ({ menuList, parrentId }: ItemCollapseProps) => {
           sx={{
             textDecoration: "none",
             display: "block",
-            color: item.href === pathname ? "primary.main" : "textInverse",
+            color: item.href === pathname ? "primary.main" : "text.primary",
             py: 1,
             "&:hover": {
               color: "primary.main",
             },
           }}
           whiteSpace="nowrap"
-          color="textInverse"
+          color="text.primary"
           key={item.id}
         >
           {item.name}

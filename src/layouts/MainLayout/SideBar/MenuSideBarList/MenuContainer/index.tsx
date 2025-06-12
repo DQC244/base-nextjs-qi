@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import React, { useMemo } from "react";
 import DOMPurify from "dompurify";
 import styles from "./menu.module.scss";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import ItemCollapse from "./ItemCollapse";
 import { ArrowIcon } from "@/components/icons";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
@@ -48,7 +48,7 @@ const MenuContainer = ({ menu }: MenuContainerProps) => {
           className={isActive ? styles.menuActive : ""}
           sx={{
             cursor: "pointer",
-            color: "textInverse",
+            color: "text.primary",
             borderLeft: "4px solid transparent",
             "&:hover": {
               backgroundColor: "primary.light",

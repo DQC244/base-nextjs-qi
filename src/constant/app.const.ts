@@ -39,7 +39,7 @@ export const DATE_TIME_FORMAT = "DD/MM/YYYY HH:mm";
 export const TIME_FORMAT = "HH:mm";
 export const DATE_TIME_YYYYescape = "YYYY-MM-DDTHH:mm:ss";
 
-export const APP_TITLE = "Quản lý thiết bị";
+export const APP_TITLE = "Fashion Shop";
 export const APP_DESCRIPTION = "";
 
 export const PHONE_REGEX = /^(84|0[2|3|4|5|6|7|8|9])\d{8,}$/;

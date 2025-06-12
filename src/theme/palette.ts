@@ -39,11 +39,11 @@ const palette: PaletteOptions = {
   mode: "light",
   common,
   primary: {
-    main: "#16AD5B",
-    light: "rgba(42, 171, 74, 0.2)",
-    background: "#D4EEDB",
-    table: "rgb(228, 246, 213)",
-    contrastText: "#fff",
+    main: "#1976d2",
+    light: "#77abde6e",
+    background: "#77abde",
+    table: "#77abde",
+    contrastText: "#000",
   },
   secondary: {
     main: "#9c27b0",

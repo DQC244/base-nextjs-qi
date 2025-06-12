@@ -1,4 +1,4 @@
-export const Logo = "/images/librarian.svg";
+export const Logo = "/images/librarian.jpg";
 export const LogoImage = "/images/img-library.svg";
 export const LoadingGif = "/images/loading.svg";
 

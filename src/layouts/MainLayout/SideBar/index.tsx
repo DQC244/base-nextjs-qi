@@ -15,9 +15,9 @@ const SideBar = () => {
         minWidth: isCollapse ? COLLAPSE_WIDTH : SIDEBAR_WIDTH,
         maxWidth: isCollapse ? COLLAPSE_WIDTH : SIDEBAR_WIDTH,
         height: "100%",
-        backgroundColor: "#1C2028",
         overflowX: "hidden",
         transition: "all 0.25s linear",
+        boxShadow: "1.5px 0px 2px 0px rgba(0, 0, 0, 0.1)",
       }}
     >
       <Logo />
